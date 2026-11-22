@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>azuki-beans — piccoli strumenti open source sui dati pubblici</title>
+<meta name="description" content="azuki-beans realizza piccoli strumenti web gratuiti e open source che rendono utili i dati pubblici: previsioni della qualità dell'aria, file .p7m firmati e fatture elettroniche, tempi di attesa sanitari in Alto Adige.">
+<link rel="canonical" href="https://azukibeans.dev/it/">
+<link rel="alternate" hreflang="en" href="https://azukibeans.dev/">
+<link rel="alternate" hreflang="it" href="https://azukibeans.dev/it/">
+<link rel="alternate" hreflang="x-default" href="https://azukibeans.dev/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:title" content="azuki-beans — piccoli strumenti open source sui dati pubblici">
+<meta property="og:description" content="Strumenti web gratuiti e open source: qualità dell'aria, file .p7m e fatture elettroniche, tempi di attesa sanitari.">
+<meta property="og:url" content="https://azukibeans.dev/it/">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://azukibeans.dev/#org",
+  "name": "azuki-beans",
+  "url": "https://azukibeans.dev/",
+  "logo": "https://azukibeans.dev/azuki-beans-mark.svg",
+  "sameAs": ["https://github.com/azuki-beans"]
+}
+</script>
+</head>
+<body>
+<header>
+  <img src="/azuki-beans-mark.svg" alt="" width="64" height="64">
+  <div>
+    <h1>azuki-beans</h1>
+    <p>Piccoli strumenti gratuiti e open source che rendono davvero utilizzabili i dati pubblici.</p>
+  </div>
+  <a class="lingua" href="/" hreflang="en" lang="en">English</a>
+</header>
+
+<main>
+  <article class="progetto">
+    <h2><a href="https://coperni.azukibeans.dev/it/places/">Coperni</a></h2>
+    <p class="sotto">Previsioni della qualità dell'aria su mappa</p>
+    <p>PM2.5, PM10, NO₂, O₃ e SO₂ per le prossime 48 ore attorno a qualsiasi comune italiano o
+      città europea, dalle previsioni Copernicus (CAMS), confrontati con le soglie UE e con
+      l'indice europeo di qualità dell'aria. Con la classifica giornaliera delle città.</p>
+    <p class="link">
+      <a href="https://coperni.azukibeans.dev/it/places/">Apri la mappa</a> ·
+      <a href="https://coperni.azukibeans.dev/it/places/classifica/">Classifica delle città</a> ·
+      <a href="https://github.com/azuki-beans/coperni">Codice sorgente</a>
+    </p>
+  </article>
+
+  <article class="progetto">
+    <h2><a href="https://p7m.azukibeans.dev/">p7m-apri</a></h2>
+    <p class="sotto">Aprire file .p7m e fatture elettroniche</p>
+    <p>Estrai il documento da un file firmato digitalmente <code>.p7m</code> e verifica la firma,
+      senza installare nulla. Trasforma le fatture elettroniche FatturaPA (XML o .p7m) in un PDF
+      leggibile. I file vengono cancellati dopo un'ora.</p>
+    <p class="link">
+      <a href="https://p7m.azukibeans.dev/">Apri un file .p7m</a> ·
+      <a href="https://p7m.azukibeans.dev/fatture/">Visualizza una fattura elettronica</a> ·
+      <a href="https://github.com/azuki-beans/p7m-apri">Codice sorgente</a>
+    </p>
+  </article>
+
+  <article class="progetto">
+    <h2><a href="https://attese.azukibeans.dev/">Attese</a></h2>
+    <p class="sotto">Tempi di attesa sanitari in Alto Adige</p>
+    <p>I tempi di attesa per visite ed esami in Alto Adige/Südtirol, dagli open data provinciali:
+      confronta ospedali e distretti e guarda come cambiano nel tempo.</p>
+    <p class="link">
+      <a href="https://attese.azukibeans.dev/">Vedi i tempi di attesa</a>
+    </p>
+  </article>
+
+  <article class="progetto">
+    <h2><a href="https://github.com/azuki-beans/fatturapa">fatturapa</a></h2>
+    <p class="sotto">Libreria Python</p>
+    <p>Parser senza dipendenze della fattura elettronica italiana (FatturaPA 1.2, FPR12/FPA12)
+      in dataclass Python. È il motore del visualizzatore di fatture di p7m-apri.</p>
+    <p class="link">
+      <a href="https://pypi.org/project/fatturapa/">PyPI</a> ·
+      <a href="https://github.com/azuki-beans/fatturapa">Codice sorgente</a>
+    </p>
+  </article>
+</main>
+
+<footer>
+  <p>Tutti i progetti sono gratuiti, senza pubblicità e open source. ·
+    <a href="https://github.com/azuki-beans">github.com/azuki-beans</a></p>
+</footer>
+</body>
+</html>
