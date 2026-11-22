@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>azuki-beans — small open source tools for public data</title>
+<meta name="description" content="azuki-beans makes small, free, open source web tools that turn public data into something useful: air quality forecasts across Europe, .p7m signed files and Italian e-invoices, waiting times in South Tyrol.">
+<link rel="canonical" href="https://azukibeans.dev/">
+<link rel="alternate" hreflang="en" href="https://azukibeans.dev/">
+<link rel="alternate" hreflang="it" href="https://azukibeans.dev/it/">
+<link rel="alternate" hreflang="x-default" href="https://azukibeans.dev/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="azuki-beans — small open source tools for public data">
+<meta property="og:description" content="Free, open source web tools: air quality forecasts, .p7m files and e-invoices, health waiting times.">
+<meta property="og:url" content="https://azukibeans.dev/">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://azukibeans.dev/#org",
+      "name": "azuki-beans",
+      "url": "https://azukibeans.dev/",
+      "logo": "https://azukibeans.dev/azuki-beans-mark.svg",
+      "sameAs": ["https://github.com/azuki-beans"]
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Coperni",
+      "url": "https://coperni.azukibeans.dev/",
+      "description": "Air quality forecasts from Copernicus CAMS on a map, for Italian municipalities and European cities.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "isAccessibleForFree": true,
+      "publisher": {"@id": "https://azukibeans.dev/#org"}
+    },
+    {
+      "@type": "WebApplication",
+      "name": "p7m-apri",
+      "url": "https://p7m.azukibeans.dev/",
+      "description": "Open .p7m digitally signed files online, extract the document and verify the signature. Italian e-invoice (FatturaPA) viewer.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "isAccessibleForFree": true,
+      "publisher": {"@id": "https://azukibeans.dev/#org"}
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Attese",
+      "url": "https://attese.azukibeans.dev/",
+      "description": "Waiting times for medical visits and tests in South Tyrol (Alto Adige), from the provincial open data.",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Any",
+      "isAccessibleForFree": true,
+      "publisher": {"@id": "https://azukibeans.dev/#org"}
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "fatturapa",
+      "codeRepository": "https://github.com/azuki-beans/fatturapa",
+      "programmingLanguage": "Python",
+      "description": "Zero-dependency Python parser for Italian electronic invoices (FatturaPA 1.2).",
+      "publisher": {"@id": "https://azukibeans.dev/#org"}
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header>
+  <img src="/azuki-beans-mark.svg" alt="" width="64" height="64">
+  <div>
+    <h1>azuki-beans</h1>
+    <p>Small, free, open source tools that turn public data into something you can actually use.</p>
+  </div>
+  <a class="lingua" href="/it/" hreflang="it" lang="it">Italiano</a>
+</header>
+
+<main>
+  <article class="progetto">
+    <h2><a href="https://coperni.azukibeans.dev/">Coperni</a></h2>
+    <p class="sotto">Air quality forecasts on a map</p>
+    <p>PM2.5, PM10, NO₂, O₃ and SO₂ for the next 48 hours around any Italian municipality or
+      European city, from the Copernicus (CAMS) forecasts, compared with EU thresholds and the
+      European Air Quality Index. Includes a daily ranking of cities.</p>
+    <p class="link">
+      <a href="https://coperni.azukibeans.dev/">Open the map</a> ·
+      <a href="https://coperni.azukibeans.dev/places/classifica/">City ranking</a> ·
+      <a href="https://github.com/azuki-beans/coperni">Source code</a>
+    </p>
+  </article>
+
+  <article class="progetto">
+    <h2><a href="https://p7m.azukibeans.dev/">p7m-apri</a></h2>
+    <p class="sotto">Open .p7m files and Italian e-invoices</p>
+    <p>Extract the document from a digitally signed <code>.p7m</code> file and check the
+      signature, without installing anything. Turns FatturaPA e-invoices (XML or .p7m) into a
+      readable PDF. Files are deleted after one hour.</p>
+    <p class="link">
+      <a href="https://p7m.azukibeans.dev/">Open a .p7m file</a> ·
+      <a href="https://p7m.azukibeans.dev/fatture/">E-invoice viewer</a> ·
+      <a href="https://github.com/azuki-beans/p7m-apri">Source code</a>
+    </p>
+  </article>
+
+  <article class="progetto">
+    <h2><a href="https://attese.azukibeans.dev/">Attese</a></h2>
+    <p class="sotto">Health waiting times in South Tyrol</p>
+    <p>Waiting times for medical visits and tests in Alto Adige/Südtirol, from the provincial open
+      data: compare hospitals and districts and see how times change over time. In Italian.</p>
+    <p class="link">
+      <a href="https://attese.azukibeans.dev/">See waiting times</a>
+    </p>
+  </article>
+
+  <article class="progetto">
+    <h2><a href="https://github.com/azuki-beans/fatturapa">fatturapa</a></h2>
+    <p class="sotto">Python library</p>
+    <p>Zero-dependency parser for Italian electronic invoices (FatturaPA 1.2, FPR12/FPA12) into
+      Python dataclasses. It powers the p7m-apri invoice viewer.</p>
+    <p class="link">
+      <a href="https://pypi.org/project/fatturapa/">PyPI</a> ·
+      <a href="https://github.com/azuki-beans/fatturapa">Source code</a>
+    </p>
+  </article>
+</main>
+
+<footer>
+  <p>All projects are free, ad-free and open source. ·
+    <a href="https://github.com/azuki-beans">github.com/azuki-beans</a></p>
+</footer>
+</body>
+</html>
